@@ -8,5 +8,4 @@ def root():
 
 @app.get("/weather/{city}")
 def get_weather(city: str):
-    # Fake weather for demo
     return {"city": city, "temperature": "28°C", "condition": "Sunny"}
